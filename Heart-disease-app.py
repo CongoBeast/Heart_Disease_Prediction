@@ -4,12 +4,12 @@ import pandas as pd
 from sklearn import neighbors
 import matplotlib.pyplot as plt 
 import joblib
-# import pickle
+import pickle
 
 # print(sklearn.__version__)
 
-modelscorev2 = joblib.load('knn_model3.pkl' , mmap_mode ='r+')
-# loaded_model = pickle.load(open('hybrid_knn.sav', 'rb'))
+# modelscorev2 = joblib.load('knn_model3.pkl' , mmap_mode ='r+')
+modelscorev2 = pickle.load(open('knn_model3.pkl', 'rb'))
 # result = loaded_model.score(X_test, Y_test)
 # print(result)
 
