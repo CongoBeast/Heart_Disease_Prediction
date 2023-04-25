@@ -12,7 +12,7 @@ import pickle
 # modelscorev2 = 'knn_model3.pkl' with open(filepath, 'rb') as f: p = pickle.Unpickler(f) model = p.load() f.close()
 
 
-modelscorev2 = joblib.load('knn_model3.pkl' , mmap_mode ='rb')
+modelscorev2 = joblib.load('knn_model3.pkl' , mmap_mode ='r+')
 # modelscorev2 = pickle.load(open('knn_model3.pkl', 'rb'))
 # result = loaded_model.score(X_test, Y_test)
 # print(result)
