@@ -8,7 +8,7 @@ import joblib
 
 # print(sklearn.__version__)
 
-modelscorev2 = joblib.load('knn_model3.pkl' , mmap_mode ='r')
+modelscorev2 = joblib.load('knn_model3.pkl' , mmap_mode ='r+')
 # loaded_model = pickle.load(open('hybrid_knn.sav', 'rb'))
 # result = loaded_model.score(X_test, Y_test)
 # print(result)
